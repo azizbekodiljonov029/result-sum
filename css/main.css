@@ -1,0 +1,300 @@
+*::after::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    background-color: #f7f6f6;
+    border-radius:32px ;
+    overflow: hidden;
+   
+}
+.img{
+    width: 368px;
+}
+
+.box-description {
+    text-align: center;
+    
+    width: 100%;
+    /* background: rgb(131, 103, 103); */
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    display: block;
+    display: flex;
+    margin-top: -38px;
+  margin-left: 41px;
+  margin-bottom: 28px;
+}
+.cart-box {
+    /* margin-bottom: 16px; */
+    width: 368px;
+    
+    
+}
+.red-card {
+    width: 288px;
+    height: 56px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+
+    background: #fff7f7;
+    border-radius: 8px;
+}
+
+.flash {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 14px;
+}
+
+.text-sec {
+    color: #ff414b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.flesh-text {
+    margin-left: auto;
+    color: #34405f;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.flesh-text span {
+    color: #9299ad;
+    font-weight: 400;
+}
+.red-card,
+.memory-card,
+.verable-card,
+.visual-card {
+    width: 288px;
+    height: 56px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+
+    border-radius: 8px;
+}
+
+/* MEMORY */
+.memory-card {
+    background: #f5f2ff;
+}
+
+.memory-card img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 14px;
+}
+
+.memory {
+    color: #8055ff;
+    font-size: 16px;
+}
+
+.memory-text {
+    margin-left: auto;
+    color: #34405f;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.memory-text span {
+    color: #9299ad;
+    font-weight: 400;
+}
+
+/* VERBAL */
+.verable-card {
+    background: #effbf5;
+}
+
+.verable-card img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 14px;
+}
+
+.verable {
+    color: #20b878;
+    font-size: 16px;
+}
+
+.verable-text {
+    margin-left: auto;
+    color: #34405f;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.verable-text span {
+    color: #9299ad;
+    font-weight: 400;
+}
+
+/* VISUAL */
+.visual-card {
+    background: #fff8ed;
+}
+
+.visual-card img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 14px;
+}
+
+.visual {
+    color: #f0a12c;
+    font-size: 16px;
+}
+
+.visual-text {
+    margin-left: auto;
+    color: #34405f;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.visual-text span {
+    color: #9299ad;
+    font-weight: 400;
+}
+button{
+    width: 288px;
+    height: 56px;
+    color: #FFF ;
+    background: #303B59;
+    border-radius: 128px;
+    margin-bottom: 41px ;
+    cursor: pointer;
+}
+button:hover{
+    border-color: #25437e;
+}
+/* TABLET — 736px */
+@media (max-width: 780px) {
+  * {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 736px;
+  overflow-x: hidden;
+}
+
+.red-card,
+.memory-card,
+.verable-card,
+.visual-card {
+  width: 100%;
+  max-width: 288px;
+  margin-left: 0;
+}
+    .box-image,
+    .box-description {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .box-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        margin: 0 0 24px;
+        font-size: 28px;
+        justify-content: center;
+    }
+
+    .red-card,
+    .memory-card,
+    .verable-card,
+    .visual-card {
+        width: 100%;
+        max-width: 288px;
+        margin: 0 auto 16px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 288px;
+        margin: 8px auto 0;
+    }
+}
+
+/* MOBILE — 375px */
+@media (max-width: 380px) {
+    .container {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 24px;
+        border-width: 0;
+    }
+
+    .box-image,
+    .box-description {
+        width: 100%;
+    }
+
+    .box-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 0 0 24px;
+        text-align: center;
+    }
+
+    .cart-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .red-card,
+    .memory-card,
+    .verable-card,
+    .visual-card {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 12px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 100%;
+        margin: 8px auto 0;
+    }
+    
+}
